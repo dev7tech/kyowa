@@ -1,0 +1,113 @@
+.listing-add-form-container {
+    position: relative;
+    display: flex;
+    padding-top: 25px;
+}
+.listing-form-sidebar-container {
+    width: 200px;
+    margin: 0 auto;
+}
+.listing-form-main-contents-container {
+    flex: 1;
+    padding-left: 1rem;
+}
+.listing-form-sidebar-container .list-group {
+    padding-right: 1rem;
+}
+.listing-form-sidebar-container .list-group-item {
+    border: unset;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 0.6rem 0 0.5rem 1.25rem;
+    font-size: 15px;
+}
+.listing-form-sidebar-container .list-group-item.active {
+    background-color: #00c5dc;
+    box-shadow: 0px 5px 10px 2px rgba(0,197,220,0.19) !important;
+    border-radius: .25rem;
+}
+.listing-form-main-contents-container .property-title-label {
+    margin-bottom: 1rem;
+}
+.listing-form-main-contents-container .form-group.has-danger .property-title-label {
+    color: #eb4636;
+}
+.listing-form-main-contents-container .m-radio {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+.listing-form-sidebar-container .list-group-item.list-group-item-action.tab-passed::after {
+    content: "\f17b";
+    color: #16ec09;
+    font: normal normal bold 16px/1 "LineAwesome";
+    font-size: 1.5rem!important;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+#workspace_description_form textarea.workspace-description-textarea {
+    font-size: 16px;
+}
+#workspace_description_form textarea.workspace-description-textarea.bold {
+    font-weight: bold
+}
+#workspace_description_form textarea.workspace-description-textarea.italic {
+    font-style: italic;
+}
+#workspace_description_form .description-content-remove-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+    top: 5px;
+    right: 20px;
+    color: #ff3232;
+    transition: all .2s ease-out;
+}
+#workspace_description_form .description-content-remove-btn:hover {
+    background-color: #ff3232;
+    color: #fff;
+}
+#workspace_description_form .description-content-remove-btn>i {
+    font-size: 20px;
+}
+.workspace_image_delete_btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: #eb2e2e;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    padding-top: 7px;
+    transition: all .2s ease-out;
+}
+.workspace_image_delete_btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #eb2e2e;
+}
+#workspace_photo_container {
+    margin-right: -5px!important;
+    margin-left: -5px!important;
+}
+#workspace_photo_container img {
+    width: auto;
+    height: 180px;
+}
+#workspace_photo_container .single-img-container {
+    margin: 5px;
+    border: 1px solid #ddd;
+    padding: 5px!important;
+    border-radius: 5px;
+    position: relative;
+}

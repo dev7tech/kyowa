@@ -1,0 +1,382 @@
+.m-content {
+    height: calc(100% - 100px);
+}
+.m-portlet-chat {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+.m-grid.m-grid--hor:not(.m-grid--desktop):not(.m-grid--desktop-and-tablet):not(.m-grid--tablet):not(.m-grid--tablet-and-mobile):not(.m-grid--mobile)>.m-grid__item.m-grid__item--fluid,
+.m-grid.m-grid--hor:not(.m-grid--desktop):not(.m-grid--desktop-and-tablet):not(.m-grid--tablet):not(.m-grid--tablet-and-mobile):not(.m-grid--mobile)>.m-grid__item.m-grid__item--fluid-general {
+    display: flex;
+    flex-direction: row;
+}
+.m-grid__item.m-grid__item--fluid.m-wrapper {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+.chat-portlet-user-list-container {
+    width: 300px;
+    height: 100%;
+}
+.chat-portlet-chat-form-container {
+    flex: 1;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+.m-portlet-chat {
+    position: relative;
+    height: 100%;
+    max-height: 680px;
+    margin: 20 20 20 20;
+    display: flex;
+}
+.m-messenger__seperator {
+    border-bottom: 1px solid #f4f5f8;
+    margin: 20px 0;
+}
+.m-messenger__userinfo {
+    padding: 20px 0;
+}
+.m-messenger__userinfo>span {
+    font-size: 17px;
+}
+.m-messenger__messages {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+.m-messenger__messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.m-messenger__messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Handle */
+.m-messenger__messages::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.m-messenger__messages::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.m-messenger__form {
+    margin: 0 0 10px 0;
+    display: table;
+    table-layout: fixed;
+}
+.m-messenger__form .m-messenger__form-controls {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+}
+.m-messenger__form .m-messenger__form-controls .m-messenger__form-input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.m-messenger__form .m-messenger__form-input {
+    border: 0;
+    background: none;
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #575962;
+    background-color: #f4f5f8;
+    transition: all .1s ease-out;
+}
+.m-messenger__form .m-messenger__form-input:active,
+.m-messenger__form .m-messenger__form-input:focus,
+.m-messenger__form .m-messenger__form-input:focus:active {
+    color: #3b3d44;
+    background-color: #e3e5ee;
+}
+.m-messenger__form .m-messenger__form-input:hover {
+    color: #3b3d44;
+    background-color: #d6d9e2;
+}
+.m-messenger__form .m-messenger__form-tools {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+}
+.m-messenger__form .m-messenger__form-tools .m-messenger__form-attachment {
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0;
+    cursor: pointer;
+}
+.m-messenger__form .m-messenger__form-tools .m-messenger__form-attachment>i {
+    font-size: 1.4rem;
+}
+.m-messenger__form .m-messenger__form-attachment {
+    background-color: #f7f8fa;
+    color: #cfcedb;
+    transition: all .1s ease-out;
+}
+.m-messenger__form .m-messenger__form-tools .m-messenger__form-attachment:hover {
+    text-decoration: none;
+}
+.m-messenger__form .m-messenger__form-attachment:hover {
+    background-color: #e1e2e6;
+    color: #adabc1;
+}
+.m-messenger__messages .m-messenger__wrapper:before,
+.m-messenger__messages .m-messenger__wrapper:after {
+    content: " ";
+    display: table;
+}
+.m-messenger__messages .m-messenger__message.m-messenger__message--out {
+    float: right;
+    padding-left: 54px;
+}
+.m-messenger .m-messenger__messages .m-messenger__message {
+    margin: 0 0 20px 0;
+    display: table;
+    table-layout: fixed;
+}
+.m-messenger__messages .m-messenger__message .m-messenger__message-body {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0;
+    position: relative;
+}
+.m-messenger__message.m-messenger__message--out .m-messenger__message-arrow {
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 10px;
+    height: 40px;
+    left: auto/*rtl:ignore*/;
+    right: 0/*rtl:ignore*/;
+    margin-left: auto/*rtl:ignore*/;
+    margin-right: -9px /*rtl:ignore*/;
+    right: 2px;
+    left: auto;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 6px;
+    color: #716aca;
+}
+.m-messenger__message.m-messenger__message--out .m-messenger__message-content {
+    margin-right: 10px;
+    background: #716aca;
+}
+.m-messenger__message .m-messenger__message-body .m-messenger__message-content {
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+}
+.m-messenger__messages .m-messenger__message.m-messenger__message--in {
+    float: left;
+}
+.m-messenger .m-messenger__messages .m-messenger__message {
+    display: table;
+    table-layout: fixed;
+    margin: 0 0 20px 0;
+}
+.m-messenger__message.m-messenger__message--in .m-messenger__message-arrow {
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 10px;
+    height: 40px;
+    left: 0/*rtl:ignore*/;
+    margin-left: -9px /*rtl:ignore*/;
+    left: 2px;
+    right: auto;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 6px;
+    color: #f4f5f8;
+}
+.m-messenger__message.m-messenger__message--in .m-messenger__message-arrow:before {
+    position: relative;
+    top: 0;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.m-messenger__message.m-messenger__message--in .m-messenger__message-arrow:before {
+    display: inline-block;
+    font-family: "Metronic";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 0px;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    content: "";
+}
+.m-messenger__messages .m-messenger__message.m-messenger__message--in .m-messenger__message-content {
+    background: #f4f5f8;
+    margin-left: 10px;
+}
+.m-messenger__message.m-messenger__message--out .m-messenger__message-arrow:before {
+    position: relative;
+    top: 0;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.m-messenger__message.m-messenger__message--out .m-messenger__message-arrow:before {
+    display: inline-block;
+    font-family: "Metronic";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 0px;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    content: "";
+}
+.m-messenger__messages .m-messenger__message {
+    margin: 0 0 20px 0;
+    display: table;
+    table-layout: fixed;
+}
+.m-messenger__messages .m-messenger__message.m-messenger__message--out .m-messenger__message-content .m-messenger__message-text {
+    color: #f7f7f7;
+    font-size: 1rem;
+}
+.m-messenger__messages .m-messenger__message .m-messenger__message-content .m-messenger__message-image {
+    max-width: 300px;
+}
+.m-messenger__messages .m-messenger__message .m-messenger__message-content .m-messenger__message-image>img {
+    width: 100%;
+}
+.m-messenger__messages .m-messenger__message.m-messenger__message--out .m-messenger__message-content .m-messenger__message-time {
+    color: #f7f7f7;
+    font-size: 0.8rem;
+    margin-bottom: -0.7rem;
+    margin-top: 0.5rem;
+}
+.m-messenger__messages .m-messenger__message.m-messenger__message--in .m-messenger__message-content .m-messenger__message-time {
+    color: #2a2a2a;
+    font-size: 0.8rem;
+    margin-bottom: -0.7rem;
+    margin-top: 0.5rem;
+}
+.m-messenger__messages .m-messenger__wrapper:after {
+    clear: both;
+}
+
+.m-messenger__messages .m-messenger__wrapper:before,
+.m-messenger__messages .m-messenger__wrapper:after {
+    content: " ";
+    display: table;
+}
+.chat-portlet-user-list {
+    max-height: 680px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.chat-portlet-user-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.chat-portlet-user-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Handle */
+.chat-portlet-user-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.chat-portlet-user-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.m-messenger__form {
+    margin: 0 0 10px 0;
+    display: table;
+    table-layout: fixed;
+}
+.m-widget4 .m-widget4__item {
+    padding-left: 10px;
+    transition: all .1s ease-out;
+    position: relative;
+}
+.m-widget4 .m-widget4__item:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+.m-widget4 .m-widget4__item.selected {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+
+.m-widget4 .m-widget4__item.have-unread-message::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ff4141;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* .m-widget4 .m-widget4__item.have-unread-message {
+    animation: colorchange 5s infinite;
+    -webkit-animation: colorchange 5s infinite;
+}
+@keyframes colorchange
+{
+    0%   {background: #ffffff;}
+    25%  {background: #f6f5d5;}
+    50%  {background: #f7f5ba;}
+    75%  {background: #f6f5d5;}
+    100% {background: #ffffff;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {background: #ffffff;}
+    25%  {background: #f6f5d5;}
+    50%  {background: #f7f5ba;}
+    75%  {background: #f6f5d5;}
+    100% {background: #ffffff;}
+} */
